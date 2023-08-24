@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #2e80ce;
+    --header-bg: #10375c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+    background-image: url(../img/dentist-04.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ===================LOGIN=======================*/
+.form-login {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    padding: 10px 50px;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 8px;
+}
+
+.login__title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.login-user-1 {
+    margin-top: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.login-user-2 {
+    width: 250px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    padding: 10px 10px;
+}
+
+.login-user-2::placeholder {
+    color: #000;
+    font-weight: 400;
+}
+
+.login-password-1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.login-password-2 {
+    width: 250px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    padding: 10px 10px;
+}
+
+.login-password-2::placeholder {
+    color: #000;
+    font-weight: 400;
+}
+
+.save-passs {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.save-pass--text {
+    font-size: 15px;
+}
+
+.foretpass {
+    font-size: 15px;
+    color: #000;
+    margin-left: 50px;
+}
+
+.login-btn-login {
+    text-align: center;
+}
+
+.bnt-login {
+    color: #fff;
+    border: 0;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: #201f1f;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login__img__content {
+    display: block;
+    width: 100%;
+    min-width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+}
