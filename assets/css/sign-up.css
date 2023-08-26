@@ -94,8 +94,38 @@ body {
     margin-bottom: 30px;
 }
 
-.save-pass--text {
-    font-size: 15px;
+.save-passs label {
+    position: relative;
+    user-select: none;
+}
+
+.save-passs label::before,
+.save-passs label::after {
+    content: "";
+    display: inline-block;
+}
+
+.save-passs label::before {
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+    border: 2px solid #000;
+}
+
+.save-passs [type="checkbox"]:checked ~ label::before {
+    background-color: #000;
+}
+
+.save-passs [type="checkbox"]:checked ~ label::after {
+    position: absolute;
+    left: 3px;
+    top: 5.5px;
+    width: 6px;
+    height: 3px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    rotate: -45deg;
+    transition: ease-out 0.2s;
 }
 
 .foretpass {
